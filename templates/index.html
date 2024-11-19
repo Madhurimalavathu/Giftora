@@ -14,19 +14,32 @@
     <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
-          <form action="#" class="sign-in-form">
+          <form action="/register" method="POST" class="sign-up-form">
             <img src="Giftora logo.png" alt="Giftora Logo" class="form-logo" />
-            <h2 class="title">Sign in</h2>
+            <h2 class="title">Sign up</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
+              <input
+                type="text"
+                name="username"
+                placeholder="Username"
+                required
+              />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" name="email" placeholder="Email" required />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+              <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                required
+              />
             </div>
-            <input type="submit" value="Login" class="btn solid" />
-            <p class="social-text">Or Sign in with social platforms</p>
+            <input type="submit" class="btn" value="Sign up" />
             <div class="social-media">
               <a href="#" class="social-icon">
                 <i class="fab fa-facebook-f"></i>
@@ -42,23 +55,29 @@
               </a>
             </div>
           </form>
-          <form action="#" class="sign-up-form">
+
+          <form action="/login" method="POST" class="sign-in-form">
             <img src="Giftora logo.png" alt="Giftora Logo" class="form-logo" />
-            <h2 class="title">Sign up</h2>
+            <h2 class="title">Sign in</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
-            </div>
-            <div class="input-field">
-              <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" />
+              <input
+                type="text"
+                name="username"
+                placeholder="Username"
+                required
+              />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+              <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                required
+              />
             </div>
-            <input type="submit" class="btn" value="Sign up" />
-            <p class="social-text">Or Sign up with social platforms</p>
+            <input type="submit" value="Login" class="btn solid" />
             <div class="social-media">
               <a href="#" class="social-icon">
                 <i class="fab fa-facebook-f"></i>
@@ -82,12 +101,11 @@
           <div class="content">
             <h3>New to Giftora?</h3>
             <p>
-              Join Giftora today to discover a world of personalized gifts for every occasion. 
-        Make your loved ones feel special with curated collections, just a click away!
+              Join Giftora today to discover a world of personalized gifts for
+              every occasion. Make your loved ones feel special with curated
+              collections, just a click away!
             </p>
-            <button class="btn transparent" id="sign-up-btn">
-              Sign up
-            </button>
+            <button class="btn transparent" id="sign-up-btn">Sign up</button>
           </div>
           <img src="login.png" class="image" alt="" />
         </div>
@@ -95,12 +113,11 @@
           <div class="content">
             <h3>Welcome back to Giftora!</h3>
             <p>
-              We've missed you! Log in to explore new arrivals, manage your wishlist, 
-              and make someone's day extra special with the perfect gift.
+              We've missed you! Log in to explore new arrivals, manage your
+              wishlist, and make someone's day extra special with the perfect
+              gift.
             </p>
-            <button class="btn transparent" id="sign-in-btn">
-              Sign in
-            </button>
+            <button class="btn transparent" id="sign-in-btn">Sign in</button>
           </div>
           <img src="reg.png" class="image" alt="" />
         </div>
